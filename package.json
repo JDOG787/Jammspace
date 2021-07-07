@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd client && (npm i && npm run build)",
-    "start": "cd client && npm start",
-    "start-server": "cd server && node ."
+    "start": "cd client && (npm start && (cd ../server && npm start))"
   },
   "repository": {
     "type": "git",
