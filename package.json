@@ -4,7 +4,7 @@
   "description": "A collaborative music app to create music with people from around the world",
   "main": "index.js",
   "scripts": {
-    "build": "cd client && npm run build",
+    "build": "cd client && (npm i && npm run build)",
     "start": "cd client && npm start"
   },
   "repository": {
