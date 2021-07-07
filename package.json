@@ -1,0 +1,21 @@
+{
+  "name": "jammspace",
+  "version": "1.0.0",
+  "description": "A collaborative music app to create music with people from around the world",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "start": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDOG787/Jammspace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JDOG787/Jammspace/issues"
+  },
+  "homepage": "https://github.com/JDOG787/Jammspace#readme"
+}
