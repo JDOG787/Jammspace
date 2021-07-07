@@ -4,7 +4,7 @@
   "description": "A collaborative music app to create music with people from around the world",
   "main": "index.js",
   "scripts": {
-    "build": "cd client &&  && npm run build",
+    "build": "cd client && npm run build",
     "start": "cd client && npm start -p $PORT"
   },
   "repository": {
@@ -12,8 +12,8 @@
     "url": "git+https://github.com/JDOG787/Jammspace.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "JDOG787",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JDOG787/Jammspace/issues"
   },
