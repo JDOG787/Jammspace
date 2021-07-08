@@ -1,21 +1,20 @@
 {
-  "name": "jammspace",
-  "version": "1.0.0",
-  "description": "A collaborative music app to create music with people from around the world",
-  "main": "index.js",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "cd client && (npm i && npm run build)",
-    "start": "cd client && (npm start && (cd ../server && npm start))"
+    "dev": "next dev",
+    "build": "npm i && next build",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JDOG787/Jammspace.git"
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "keywords": [],
-  "author": "JDOG787",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JDOG787/Jammspace/issues"
-  },
-  "homepage": "https://github.com/JDOG787/Jammspace#readme"
+  "devDependencies": {
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1"
+  }
 }
