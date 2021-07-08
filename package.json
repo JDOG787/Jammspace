@@ -1,11 +1,11 @@
 {
-  "name": "client",
+  "name": "jammspace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "npm i && next build",
-    "start": "cross-env NODE_ENV=production node index.js",
+    "start": "node index.js",
     "lint": "next lint"
   },
   "dependencies": {
