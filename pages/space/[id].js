@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 export default function Space() {
   // const peer = useRef();
-  const socket = useRef();
+  const socketRef = useRef(null);
   // const router = useRouter()
   //   // const { id } = router.query;
   //   useEffect(() => {  
@@ -51,18 +51,20 @@ export default function Space() {
 
   // once page has loads
   useEffect(() => {
-    socket.current = io(); 
-    navigator.mediaDevices.getUserMedia({
-      video: true,
-      audio: true
-    }).then(gotMedia).catch(() => {})
+    const socket = io();
+    const peer = new Peer({ wrtc, initiator: true})
+    socket.emit("join-room", "test", peer._id)
+    socket.on("user-connected", (userID) => {
+      console.log(userID)
+    });
+
+    // navigator.mediaDevices.getUserMedia({
+    //   video: true,
+    //   audio: true
+    // }).then(gotMedia).catch(() => {})
 
     function gotMedia(stream) {
   
-      socket.current.emit("join-room", "test", newPeer._id)
-      socket.current.on("user-connected", (userID) => {
-        console.log(userID)
-      });
     }
   }, []);
 
